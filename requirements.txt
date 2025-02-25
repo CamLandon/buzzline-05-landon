@@ -81,6 +81,7 @@
 pip
 setuptools
 wheel
+matplotlib
 
 # Easy logging for monitoring code execution
 loguru
