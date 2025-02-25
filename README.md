@@ -2,7 +2,7 @@
 
 This project demonstrates a simple streaming analytics pipeline that processes JSON messages, stores them in a SQLite database, and provides real-time insights with a live-updating bar chart. The example is built to be easily extended to other databases or more advanced visualization tools.
 
-In this project, a producer continuously streams messages while two consumer options are available: one that reads messages from a dynamically updating file, and another—the real-time visualization consumer implemented in consumer_landon.py—that processes the messages, aggregates average sentiment scores by category in a SQLite database, and updates a live bar chart.
+After each message is inserted into the database, the consumer runs a SQL query to group the messages by category and cacluate the average sentiment. Then the results are used to update a bar chart, created by matplotlib, redrawing the chart with each update. 
 
 In this project, a producer generates streaming messages while two consumer options are available:
 1. **File-Based Consumer:** Reads messages from a dynamically updating file.
