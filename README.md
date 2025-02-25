@@ -35,10 +35,7 @@ To enhance your development experience, consider installing these VS Code extens
      ```shell
      .venv\Scripts\activate
      ```
-   - **Mac/Linux:**
-     ```shell
-     source .venv/bin/activate
-     ```
+   
 2. Install the required dependencies using `requirements.txt`:
    ```shell
    pip install -r requirements.txt
